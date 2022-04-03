@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import { Component, OnInit } from '@angular/core';
+import { AbdomenService } from '../services/abdomen.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuPage implements OnInit {
 
+  abdomenCard = [];
   rutineCards = [
     { title: 'Bicep', img: 'https://www.istockphoto.com/resources/images/PhotoFTLP/1154103408.jpg', color: 'primary', url: 'bicep', description: 'Rutina de biceps' },
     { title: 'Abdomen', img: 'https://www.istockphoto.com/resources/images/PhotoFTLP/1154103408.jpg', color: 'primary', url: 'abdomen', description: 'Rutina de abdomen' },
@@ -15,9 +17,11 @@ export class MenuPage implements OnInit {
   ];
 
   constructor(
+    private abdomenService: AbdomenService,
   ) { }
 
   ngOnInit() {
+    this.abdomenCard = this.abdomenService.getAbdomen();
   }
 
 }
