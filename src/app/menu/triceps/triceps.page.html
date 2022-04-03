@@ -11,9 +11,13 @@
 
 
 <ion-content>
+  <ion-col>
+    <div class="ion-text-center">
   <ion-text color="primary">
     <h1>{{this.tricepTitle}}</h1>
   </ion-text>
+</div>
+</ion-col>
   <ion-card *ngFor="let element of this.tricepData">
     <ion-card-header>
       <ion-card-title>{{element.nombre}}</ion-card-title>
