@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'bicep',
     loadChildren: () => import('./bicep/bicep.module').then( m => m.BicepPageModule)
+  },
+  {
+    path: 'abdomen',
+    loadChildren: () => import('./abdomen/abdomen.module').then( m => m.AbdomenPageModule)
   }
 ];
 
