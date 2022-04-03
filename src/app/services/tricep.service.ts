@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,31 +7,38 @@ import { Injectable } from '@angular/core';
 export class TricepService {
 
   constructor() { }
-  getTitle(){
-    return {title: 'Ejercicios de Triceps'};
-    getTricep() {
-      return [
-        {
-          nombre: 'Extensión de tríceps acostado',
-          descripcion: 'Este ejercicio activa la cabeza larga de los tríceps. Para hacerlo, debes estar acostado sobre un banco y, tomando un par de mancuernas o una barra EZ, debes subir los brazos y doblar los codos para subir y bajar las pesas, pasando por detrás de la cabeza y subir hasta estirarlos por completo.',
-          img: 'https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/extension-triceps-con-mancuerna-una-mano-tumbado-1370.png',
-        },
-        {
-          nombre: 'Plancha Abdominal',
-          descripcion: 'La plancha abdominal es uno de los ejercicios más efectivos para quemar esta grasa y conseguir un vientre plano, además es muy completo porque se trabajan casi todos los grupos musculares: zona del abdomen, lumbar, los glúteos y las piernas. Coloca el cuerpo en posición horizontal respecto al suelo y apoya el peso en los antebrazos y en la punta de los pies. Este ejercicio te ayuda a mejorar la resistencia física, el equilibrio, la fuerza y la concentración. Márcate como objetivo final realizar cinco series de 30 segundos con un descanso entre medias de 30 segundos.',
-          img: 'https://static-abcblogs.abc.es/wp-content/uploads/sites/254/2020/11/Planchascomparativas.jpg',
-        },
-        {
-          nombre: 'Sentadillas',
-          descripcion: 'Las sentadillas se han convertido en uno de los ejercicios básicos en cualquier rutina, ya que ayudan a adelgazar, a estimular el sistema cardiovascular y a definir los glúteos y piernas. Además de perder peso y volumen, también notarás una mejoría en tu flexibilidad, equilibrio y fuerza.',
-          img: 'https://www.runtastic.com/blog/wp-content/uploads/2018/07/Co%CC%81mo-hacer-sentadillas-1200x800.jpg',
-        },
-        {
-          nombre: 'burpees',
-          descripcion: 'Los burpees son uno de los ejercicios más completos, donde se trabajan diferentes aspectos del cuerpo como la resistencia cardiovascular, la fuerza, el equilibrio y la coordinación. En esta parte del entrenamiento estarán involucrados muchos músculos del cuerpo. ¡Es bastante exigente, pero ideal si quieres un vientre plano!',
-          img: 'https://www.ejerciciosparaadelgazar.website/wp-content/uploads/2020/07/burpees-musculos.jpg',
-        }
-      ];
-    }
+  getTitle() {
+    return { title: 'Ejercicios de Triceps', descripcion: 'Tareas y ejercicios para tus Triceps!', img: this.getTricepData()[0].img };
+
+  }
+  getTricepData() {
+
+
+    return [
+      {
+        nombre: 'Extensión de tríceps acostado',
+        descripcion: 'Este ejercicio activa la cabeza larga de los tríceps. Para hacerlo, debes estar acostado sobre un banco y, tomando un par de mancuernas o una barra EZ, debes subir los brazos y doblar los codos para subir y bajar las pesas, pasando por detrás de la cabeza y subir hasta estirarlos por completo.',
+        img: 'https://www.entrenamientos.com/media/cache/exercise_375/uploads/exercise/extension-triceps-con-mancuerna-una-mano-tumbado-1370.png',
+      },
+      {
+        nombre: 'Pushdown de tríceps con cuerda de cable',
+        descripcion: 'Este ejercicio con cable permite descansar un poco de las pesas y trabajar los músculos de forma diferente. Para hacerlo, agrega una cuerda a la polea alta de la estación de cable, toma el mango con un agarre por encima de la cabeza, manteniendo los brazos doblados y las manos separadas a la altura de los hombros. Lleva la parte superior de los brazos hacia los costados y empuja la barra hacia abajo hasta que los codos estén bloqueados.',
+        descripcion2: 'descripcion',
+        img: 'http://www.musculaciontotal.com/wp-content/uploads/2016/04/triceps-con-cables.jpg',
+      },
+      {
+        nombre: 'Lagartijas diamante',
+        descripcion: 'Las lagartijas ayudan a trabajar muchos músculos del cuerpo al mismo tiempo, pero con este tipo de agarre le das un buen desafío a los tríceps. El movimiento es normal, la diferencia es que las manos van juntas al centro del cuerpo, intentando hacer la forma de un diamante o rombo con los dedos.',
+        img: 'https://fisiomorfosis.net/wp-content/uploads/2020/12/MUSCULOS-ENVOLVIDOS-FLEXAO-DIAMANTE.jpg',
+      },
+      {
+        nombre: 'Contragolpes de tríceps',
+        descripcion: 'Este ejercicio ayuda a trabajar todas las partes de los tríceps al mismo tiempo. Se les conoce también como patadas y se hacen tomando dos mancuernas, doblando las rodillas e inclinando la espalda un poco hacia adelante. Eleva los codos y realiza un movimiento de patada hacia atrás hasta que las mancuernas queden más altas que tu espalda.',
+        img: 'https://media.gq.com.mx/photos/5f5ab5b5ef6115112e88c6dc/master/w_1600,c_limit/fondos%20triceps.jpg'
+      }
+    ];
   }
 }
+
+
+

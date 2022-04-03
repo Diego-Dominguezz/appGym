@@ -10,7 +10,7 @@ export class AbdomenService {
   constructor() { }
 
   getTitle(){
-    return {title: 'Ejercicios de Abdomen'};
+    return { title: 'Ejercicios de Abdomen', descripcion: 'Tareas y ejercicios para tu abdomen!', img: 'https://www.mundofitness.com/wp-content/uploads/gluteo6.jpg'};
   }
 
   getAbdomen() {
@@ -33,7 +33,7 @@ export class AbdomenService {
       {
         nombre: 'burpees',
         descripcion: 'Los burpees son uno de los ejercicios más completos, donde se trabajan diferentes aspectos del cuerpo como la resistencia cardiovascular, la fuerza, el equilibrio y la coordinación. En esta parte del entrenamiento estarán involucrados muchos músculos del cuerpo. ¡Es bastante exigente, pero ideal si quieres un vientre plano!',
-        img: 'https://www.ejerciciosparaadelgazar.website/wp-content/uploads/2020/07/burpees-musculos.jpg',
+        img: 'https://www.ejerciciosparaadelgazar.website/wp-content/uploads/2020/07/burpees-musculos.jpg'
       }
     ];
   }

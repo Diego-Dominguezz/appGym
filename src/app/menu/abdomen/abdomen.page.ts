@@ -1,3 +1,4 @@
+import { AbdomenService } from './../../services/abdomen.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbdomenPage implements OnInit {
 
-  constructor() { }
+  abdomenTitle: string;
+  abdomenData = [];
+
+  constructor(
+    private abdomenService: AbdomenService,
+  ) {
+    this.abdomenTitle = this.abdomenService.getTitle().title;
+    this.abdomenData = this.abdomenService.getAbdomen();
+   }
 
   ngOnInit() {
   }

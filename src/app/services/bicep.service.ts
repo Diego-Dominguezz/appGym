@@ -8,7 +8,7 @@ export class BicepService {
 
   constructor() { }
   getTitle(){
-    return {title: 'Ejercicios de Biceps'};
+    return { title: 'Ejercicios de biceps', descripcion: 'Tareas y ejercicios para tus biceps!', img: this.getBicepData()[0].img };
   }
 
   getBicepData() {
@@ -27,7 +27,7 @@ export class BicepService {
       {
         nombre: 'Dominadas supinas',
         descripcion: 'Para este ejercicio solo necesitas una barra horizontal y tu peso corporal. Para llevarlo a cabo, se agarra la barra horizontal al frente de nosotros y la llevamos hacia el cuerpo. Es decir, la barbilla debe alcanzar la altura de la barra y bajarla hacia su posición inicial.',
-        img: 'https://uploads-ssl.webflow.com/609aa41bb752e648eb4cb693/6111b6b544adf40cf5101983_photo-1526506118085-60ce8714f8c5.jpg',
+        img: 'https://uploads-ssl.webflow.com/609aa41bb752e648eb4cb693/6111b6b544adf40cf5101983_photo-1526506118085-60ce8714f8c5.jpg'
       }
     ];
   }

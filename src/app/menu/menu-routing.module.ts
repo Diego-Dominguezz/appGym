@@ -15,6 +15,14 @@ const routes: Routes = [
   {
     path: 'abdomen',
     loadChildren: () => import('./abdomen/abdomen.module').then( m => m.AbdomenPageModule)
+  },
+  {
+    path: 'triceps',
+    loadChildren: () => import('./triceps/triceps.module').then( m => m.TricepsPageModule)
+  },
+  {
+    path: 'gluteos',
+    loadChildren: () => import('./gluteos/gluteos.module').then( m => m.GluteosPageModule)
   }
 ];
 

@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-icon expand="block" [routerLink]="['..']" routerLinkActive="router-link-active" slot="start" name="caret-back">
     </ion-icon>
-    <ion-title>{{this.bicepTitle}}</ion-title>
+    <ion-title>{{this.tricepTitle}}</ion-title>
 
   </ion-toolbar>
 
@@ -12,9 +12,9 @@
 
 <ion-content>
   <ion-text color="primary">
-    <h1>{{this.bicepTitle}}</h1>
+    <h1>{{this.tricepTitle}}</h1>
   </ion-text>
-  <ion-card *ngFor="let element of this.bicepData">
+  <ion-card *ngFor="let element of this.tricepData">
     <ion-card-header>
       <ion-card-title>{{element.nombre}}</ion-card-title>
       <ion-card-subtitle>{{element.descripcion}}</ion-card-subtitle>
