@@ -11,9 +11,14 @@
 
 
 <ion-content>
+  <ion-col>
+    <div class="ion-text-center">
+
   <ion-text color="primary">
     <h1>{{this.abdomenTitle}}</h1>
   </ion-text>
+</div>
+</ion-col>
   <ion-card *ngFor="let element of this.abdomenData">
     <ion-card-header>
       <ion-card-title>{{element.nombre}}</ion-card-title>
@@ -21,7 +26,9 @@
     </ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-img [src]="element.img"></ion-img>
+
+        <ion-img [src]="element.img" ></ion-img>
+
       </ion-item>
     </ion-card-content>
   </ion-card>
