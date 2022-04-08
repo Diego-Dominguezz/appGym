@@ -11,9 +11,11 @@
 
 
 <ion-content>
+  <div class="ion-text-center">
   <ion-text color="primary">
     <h1>{{this.abdomenTitle}}</h1>
   </ion-text>
+</div>
   <ion-card *ngFor="let element of this.abdomenData">
     <ion-card-header>
       <ion-card-title>{{element.nombre}}</ion-card-title>
@@ -24,5 +26,10 @@
         <ion-img [src]="element.img" center></ion-img>
       </ion-item>
     </ion-card-content>
+  </ion-card>
+  <ion-card>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2tXQbi16EdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
   </ion-card>
 </ion-content>

@@ -22,12 +22,12 @@ export class BicepService {
         nombre: 'Chin-ups',
         descripcion: 'Este ejercicio ayuda a aumentar la fuerza de la parte superior del cuerpo para los entrenamientos generales de la persona.',
         descripcion2: 'Para hacerlo se necesita colgar la barra con las muñecas en posición supina. Es decir, con las palmas hacia arriba. Hay que separar las manos al ancho de los hombros y con el peso muerto se debe retraer hacia el cuerpo, mientras que se presiona la escápula para que la espalda esté estable. No dejes que el cuerpo se doble hacia adentro para hacerlo correctamente.',
-        img: 'https://uploads-ssl.webflow.com/609aa41bb752e648eb4cb693/6111b4e5bbdcb46ca90b2154_photo-1520334435999-d992362bb3ad.jpg'
+        img: 'https://i.blogs.es/83726f/1366_2000/1366_2000.jpg'
       },
       {
         nombre: 'Dominadas supinas',
         descripcion: 'Para este ejercicio solo necesitas una barra horizontal y tu peso corporal. Para llevarlo a cabo, se agarra la barra horizontal al frente de nosotros y la llevamos hacia el cuerpo. Es decir, la barbilla debe alcanzar la altura de la barra y bajarla hacia su posición inicial.',
-        img: 'https://uploads-ssl.webflow.com/609aa41bb752e648eb4cb693/6111b6b544adf40cf5101983_photo-1526506118085-60ce8714f8c5.jpg'
+        img: 'https://i0.wp.com/gimnasiogym.net/wp-content/uploads/2021/03/dominadas-agarres.jpg?resize=750%2C250'
       }
     ];
   }
