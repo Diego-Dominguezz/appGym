@@ -1,0 +1,6 @@
+{
+	"appId": "com.gymApp.app",
+	"appName": "appGym",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
