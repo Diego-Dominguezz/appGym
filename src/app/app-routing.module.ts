@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'inicio',
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },  {
+    path: 'mas-videos',
+    loadChildren: () => import('./mas-videos/mas-videos.module').then( m => m.MasVideosPageModule)
   }
+
 ];
 
 @NgModule({

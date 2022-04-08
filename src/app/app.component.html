@@ -3,31 +3,38 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>test</ion-list-header>
-          <ion-note>hi@ets.com</ion-note>
+          <ion-list-header routerLink="menu">APP TU GYM</ion-list-header>
+          <ion-note routerLink="menu">TUGYM@GMAIL.COM</ion-note>
 
           <ion-item routerLink="inicio" slot="header">
             <ion-icon slot="start" ios="home-outline" md="home-outline"></ion-icon>
-            <ion-label>Inicio</ion-label>
-          </ion-item>
+            <ion-menu-toggle autoHide="false">
+              <ion-label>Inicio</ion-label>
+            </ion-menu-toggle>
+            </ion-item>
 
-          <ion-menu-toggle auto-hide="false">
-            <ion-accordion-group>
-              <ion-accordion value="colors">
-                <ion-item slot="header">
-                  <ion-label routerLink="menu" >Rutinas</ion-label>
+            <ion-item routerLink="mas-videos" slot="header">
+              <ion-icon slot="start" ios="videocam-outline" md="videocam-outline"></ion-icon>
+            <ion-menu-toggle autoHide="false">
+              <ion-label>Mas videos</ion-label>
+            </ion-menu-toggle>
+            </ion-item>
+
+
+          <ion-accordion-group auto-hide="false">
+            <ion-accordion value="colors">
+              <ion-item slot="header">
+                <ion-label>Rutinas</ion-label>
+              </ion-item>
+
+              <ion-list *ngFor="let p of appPages" slot="content">
+                <ion-item [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                  <ion-icon name="caret-forward-outline"></ion-icon>
+                  <ion-label>{{ p.title }}</ion-label>
                 </ion-item>
-
-                <ion-list *ngFor="let p of appPages" slot="content">
-                  <ion-item [routerLink]="[p.url]" lines="none" detail="false"
-                    routerLinkActive="selected">
-                    <ion-icon name="caret-forward-outline"></ion-icon>
-                    <ion-label>{{ p.title }}</ion-label>
-                  </ion-item>
-                </ion-list>
-              </ion-accordion>
-            </ion-accordion-group>
-          </ion-menu-toggle>
+              </ion-list>
+            </ion-accordion>
+          </ion-accordion-group>
         </ion-list>
 
         <ion-list id="labels-list">

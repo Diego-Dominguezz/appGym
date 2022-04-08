@@ -1,0 +1,17 @@
+.item ion-thumbnail {
+  min-width: 15rem;
+  min-height: 15rem;
+
+  img {
+    max-width: 15rem;
+    min-width: 15rem;
+  }
+}
+
+.cut-text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 250px;
+    height: 1.2em;
+    white-space: nowrap;
+}

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="videos.length > 1; else elseTemplate">{{videos[0].snippet.channelTitle}}</ion-title>
+    <ng-template #elseTemplate>
+      MAS VIDEOS
+    </ng-template>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let video of videos">
+      <ion-thumbnail slot="start">
+        <img [src]="video.snippet.thumbnails.high.url" alt="...">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{video.snippet.title}}</h2>
+        <p class="cut-text">{{video.snippet.description}}</p>
+      </ion-label>
+      <ion-button slot="end" fill="clear" color="primary" href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
