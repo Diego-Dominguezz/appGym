@@ -11,7 +11,6 @@ import { MenuPage } from './menu.page';
 
 @NgModule({
   imports: [
-    BrowserModule,
     CommonModule,
     FormsModule,
     IonicModule,
