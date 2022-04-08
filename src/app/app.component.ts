@@ -11,11 +11,7 @@ import { ViewportScroller } from '@angular/common';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  public appPages = [
-    { title: 'Inicio', url: '/inicio', icon: 'home-outline' },
-    { title: 'Rutinas', url: '/menu', icon: 'accessibility-outline' }
-
-  ];
+  public appPages = [];
   public labels = [];
   constructor(
     private router: Router,
@@ -25,6 +21,10 @@ export class AppComponent {
     private bicep: BicepService,
     private scroller: ViewportScroller,
   ) {
+    this.appPages.push(this.abdomen.getTitle());
+    this.appPages.push(this.gluteos.getTitle());
+    this.appPages.push(this.tricep.getTitle());
+    this.appPages.push(this.bicep.getTitle());
     router.events.subscribe((val) => {
       if (this.router.routerState.snapshot.url === '/menu/abdomen') {
         return this.labels = this.abdomen.getAbdomen();

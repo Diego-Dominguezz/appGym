@@ -9,8 +9,8 @@ export class AbdomenService {
 
   constructor() { }
 
-  getTitle(){
-    return { title: 'Ejercicios de Abdomen', descripcion: 'Tareas y ejercicios para tu abdomen!', img: 'https://www.mundofitness.com/wp-content/uploads/gluteo6.jpg'};
+  getTitle() {
+    return { title: 'Ejercicios de Abdomen', descripcion: 'Tareas y ejercicios para tu abdomen!', img: 'https://www.mundofitness.com/wp-content/uploads/gluteo6.jpg', url: 'menu/abdomen', icon: 'fitness' };
   }
 
   getAbdomen() {

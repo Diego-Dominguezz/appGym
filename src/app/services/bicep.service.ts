@@ -8,7 +8,7 @@ export class BicepService {
 
   constructor() { }
   getTitle(){
-    return { title: 'Ejercicios de biceps', descripcion: 'Tareas y ejercicios para tus biceps!', img: this.getBicepData()[0].img };
+    return { title: 'Ejercicios de biceps', descripcion: 'Tareas y ejercicios para tus biceps!', img: this.getBicepData()[0].img, url: 'menu/bicep', icon: 'biceps' };
   }
 
   getBicepData() {

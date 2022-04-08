@@ -8,7 +8,7 @@ export class TricepService {
 
   constructor() { }
   getTitle() {
-    return { title: 'Ejercicios de Triceps', descripcion: 'Tareas y ejercicios para tus Triceps!', img: this.getTricepData()[0].img };
+    return { title: 'Ejercicios de Triceps', descripcion: 'Tareas y ejercicios para tus Triceps!', img: this.getTricepData()[0].img, url: 'menu/triceps' };
 
   }
   getTricepData() {

@@ -9,7 +9,7 @@ export class GluteosService {
   constructor() { }
   getTitle() {
 
-    return { title: 'Ejercicios de gluteos', descripcion: 'Tareas y ejercicios para tus gluteos!', img: this.getGluteosData()[0].img };
+    return { title: 'Ejercicios de gluteos', descripcion: 'Tareas y ejercicios para tus gluteos!', img: this.getGluteosData()[0].img, url: 'menu/gluteos', icon: 'barbell-outline' };
   }
   getGluteosData() {
 
